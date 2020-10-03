@@ -5,7 +5,8 @@ html, body {
 }
 
 body {
-	color: #333;
+	background-color: #252525;
+	color: rgb(200, 195, 188);
 	margin: 0;
 	padding: 8px;
 	box-sizing: border-box;
@@ -13,7 +14,7 @@ body {
 }
 
 a {
-	color: rgb(0,100,200);
+	color: rgb(200, 195, 188);
 	text-decoration: none;
 }
 
@@ -48,19 +49,13 @@ input[type="range"] {
 }
 
 button {
-	color: #333;
-	background-color: #f4f4f4;
+	background-color: rgb(30, 33, 34);
+	color: rgb(200, 195, 188);
 	outline: none;
 }
 
-button:disabled {
-	color: #999;
-}
-
 button:not(:disabled):active {
-	background-color: #ddd;
+	background-color: rgb(71, 73, 74);
 }
 
-button:focus {
-	border-color: #666;
-}
+
