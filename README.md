@@ -1,43 +1,19 @@
-A starter template for [SvelteFire](https://github.com/codediodeio/sveltefire). 
+# Sibylla Reward
 
-## 1. Degit the Template
+A POC web site to display the medals of each member of the Star Citizen Corporation: Sibylla
 
-```bash
-npx degit codediodeio/sveltefire-template fireapp
-cd fireapp
-npm install
-```
+https://robertsspaceindustries.com/orgs/SIBYLLA
 
-## 2. Get a Firebase Project
+## What does it look ?
 
-Create a Firebase project at https://firebase.google.com/ and grab your web config:
+![chrome-capture (22)](https://user-images.githubusercontent.com/7093472/95014564-0bc7fd80-0648-11eb-9e34-07850c9d6474.gif)
 
-![](https://firebasestorage.googleapis.com/v0/b/firestarter-96e46.appspot.com/o/project-config.PNG?alt=media&token=5eabb205-7ba2-4fc3-905f-e9547055e754)
+## Stack
 
-Opt-in to the following services from the Firebase console to run the demo. 
+- [Firebase](https://firebase.google.com/)
+  - Firebase Cloud Storage
+  - Firebase Authentication
+  - Firebase Hosting
+- [Svelte](https://svelte.dev/)
+- [SvelteFire](https://github.com/codediodeio/sveltefire), a fork of the official svelte template [sveltejs/template](https://github.com/sveltejs/component-template)
 
-1. **Anonymous** Login under *authentication -> sign-in method*
-1. **Cloud Firestore** under *database*. Make sure it's in test mode (or provide write access to the `posts/` collection using Security Rules).  
-
-
-## 3. Update the Firebase Config
-
-Open `App.svelte` and replace the `firebaseConfig` prop with your Firebase project credentials.
-
-```js
-let firebaseConfig = {
-  // Insert Firebase Credentials here
-};
-```
-
-Run it:
-
-```bash
-npm run dev
-```
-
-You should see something like this:
-
-![sveltefire demo app](https://firebasestorage.googleapis.com/v0/b/sveltefire-testing.appspot.com/o/sveltefire-demo.gif?alt=media&token=d5ea2807-7c50-4f94-bc73-8698b9528902)
-
-*Forked from the official --> [sveltejs/template](https://github.com/sveltejs/component-template)*
